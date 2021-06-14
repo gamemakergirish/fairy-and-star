@@ -65,6 +65,6 @@ function keyPressed(){
 	fairy.x = fairy.x-20
   }
   if(keyCode === DOWN_ARROW){
-	 Matter.body.setStatic(starBody,false);
+	 Matter.Body.setStatic(starBody,false);
 }
 }
