@@ -49,10 +49,10 @@ function draw() {
   console.log(star.y);
 
   //write code to stop star in the hand of fairy
-  if(star.y > 470 && starBody.position.y > 470){
-	 Matter.Body.setStatic(starBody,false);
+  if(star.isTouching(fairy)){
+    Matter.Body.setStatic(starBody,true);
   }
-
+ 
   drawSprites();
 }
 
